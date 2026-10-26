@@ -1,0 +1,25 @@
+# Data and derived artifacts are not tracked
+data/
+runs/
+weights/
+real-eval/
+preds/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tar
+*.zip
+*.csv
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# OS
+.DS_Store
