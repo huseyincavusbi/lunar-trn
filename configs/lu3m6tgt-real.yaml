@@ -1,0 +1,18 @@
+# Training config: fine-tune a C1-trained detector on real lunar imagery
+# (LU3M6TGT). Point 'data' at your Ultralytics dataset yaml and 'model' at
+# the starting checkpoint (C1-trained weights recommended).
+#
+# flipud is enabled because nadir lunar imagery has no canonical orientation.
+data: data/lu3m6tgt/real.yaml
+model: runs/detect/runs/full-v1s/weights/best.pt
+epochs: 15
+imgsz: 1024
+batch: 16
+device: 0
+project: runs
+name: v1s-ft-real
+seed: 42
+patience: 5
+workers: 4
+flipud: 0.5
+exist_ok: true

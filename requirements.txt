@@ -1,0 +1,9 @@
+# Install PyTorch for your accelerator first (CUDA / ROCm / CPU), e.g.:
+#   CUDA 12.4: pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   ROCm:      pip install torch --index-url https://download.pytorch.org/whl/rocm6.2
+# Then:
+ultralytics>=8.4.0
+numpy>=1.26
+pandas>=2.2
+opencv-python>=4.9
+PyYAML>=6.0

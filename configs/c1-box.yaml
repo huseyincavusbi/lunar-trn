@@ -1,0 +1,13 @@
+# Training config: YOLO26-s box detector on the NASA C1 box dataset.
+# Paths are relative to the repository root.
+data: data/c1-full-yolo/data.yaml
+model: yolo26s.pt
+epochs: 15
+imgsz: 1024
+batch: 16
+device: 0
+project: runs
+name: full-v1s
+seed: 42
+workers: 4
+exist_ok: true
